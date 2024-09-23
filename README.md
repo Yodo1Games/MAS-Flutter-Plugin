@@ -1,15 +1,9 @@
-# testmasfluttersdktwo
+# Yodo1 MAS Flutter Plugin
 
-A new Flutter project.
+This Plugins enables to integrate Yodo1 MAS (Managed Ad Service) into your  Flutter Project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Please checkout the official documentation for the plugin.
+https://developers.yodo1.com/docs/flutter/get-started/flutter-integration/
 

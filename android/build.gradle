@@ -2,7 +2,7 @@ group 'com.yodo1.testmasfluttersdktwo'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    //ext.kotlin_version = '1.6.20'
+    ext.kotlin_version = '1.6.0'
     repositories {
         google()
         mavenCentral()
@@ -10,7 +10,7 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.0'
-        //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -20,16 +20,17 @@ rootProject.allprojects {
         mavenCentral()
         maven { url "https://artifact.bytedance.com/repository/pangle" }
         maven { url "https://android-sdk.is.com" }
-        maven { url "https://sdk.tapjoy.com/" }
+        maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea" }
+        maven { url "https://artifactory.bidmachine.io/bidmachine" }
 
     }
 }
 
 apply plugin: 'com.android.library'
-//apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -39,19 +40,24 @@ android {
         disable 'InvalidPackage'
     }
 
-    //kotlinOptions {
+   // kotlinOptions {
    //    jvmTarget = '1.8'
-   // }
+  //  }
 
 
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 21
         multiDexEnabled true
     }
 }
 
 dependencies {
-    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.yodo1.mas:full:4.6.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0"
+    implementation 'com.yodo1.mas:full:4.10.1'
+
+
+
 }
+

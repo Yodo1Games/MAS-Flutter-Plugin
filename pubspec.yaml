@@ -1,7 +1,9 @@
-name: testmasfluttersdktwo
-description: A new Flutter project.
-version: 0.0.1
-homepage:
+name: yodo1mas
+description: This Plugins enables to integrate Yodo1 MAS (Managed Ad Service) into your  Flutter Project.
+version: 1.1.1
+homepage: https://Yodo1.com
+repository: https://github.com/rafaykhan99/Yodo1MasFlutterPlugin
+
 
 environment:
   sdk: ">=2.15.1 <3.0.0"

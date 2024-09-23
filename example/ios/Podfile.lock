@@ -1,0 +1,473 @@
+PODS:
+  - Ads-CN/BUAdSDK_Compatible (4.9.0.7):
+    - Ads-CN/Dep_Compatible
+  - Ads-CN/Dep_Compatible (4.9.0.7):
+    - BUAdSDK (~> 0.1.0.24)
+    - BURelyFoundation/CSJ (~> 0.0.3.19)
+  - Ads-Global/APM (4.9.1.0):
+    - RangersAPM-Pangle/Crash (= 3.0.2)
+    - RangersAPM-Pangle/Global (= 3.0.2)
+    - RangersAPM-Pangle/SessionTracker (= 3.0.2)
+  - Ads-Global/BUAdSDK_Compatible (4.9.1.0):
+    - Ads-Global/APM
+    - Ads-Global/BURelyAdSDK
+    - Ads-Global/Dep_Compatible
+  - Ads-Global/BURelyAdSDK (4.9.1.0)
+  - Ads-Global/Dep_Compatible (4.9.1.0):
+    - BUAdSDK (~> 0.1.0.25)
+    - BURelyFoundation_Global/Pangle (~> 0.0.3.24)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AppLovinSDK (11.8.1)
+  - BUAdSDK (0.1.0.26):
+    - BUAdSDK/BUAdSDK (= 0.1.0.26)
+  - BUAdSDK/BUAdSDK (0.1.0.26)
+  - BURelyFoundation/AFNetworking (0.0.3.24)
+  - BURelyFoundation/BURelyFoundation (0.0.3.24)
+  - BURelyFoundation/CSJ (0.0.3.24):
+    - BURelyFoundation/AFNetworking
+    - BURelyFoundation/BURelyFoundation
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Gecko
+    - BURelyFoundation/HM
+    - BURelyFoundation/NETWork
+    - BURelyFoundation/SDWebImage
+    - BURelyFoundation/YYModel
+    - BURelyFoundation/ZFPlayer
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Foundation (0.0.3.24):
+    - BURelyFoundation/NETWork
+  - BURelyFoundation/Gecko (0.0.3.24):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/HM (0.0.3.24)
+  - BURelyFoundation/NETWork (0.0.3.24):
+    - BURelyFoundation/AFNetworking
+  - BURelyFoundation/SDWebImage (0.0.3.24):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/YYModel (0.0.3.24)
+  - BURelyFoundation/ZFPlayer (0.0.3.24):
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Zip (0.0.3.24):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation_Global/AFNetworking (0.0.3.26)
+  - BURelyFoundation_Global/Foundation (0.0.3.26):
+    - BURelyFoundation_Global/NETWork
+  - BURelyFoundation_Global/Gecko (0.0.3.26):
+    - BURelyFoundation_Global/Foundation
+  - BURelyFoundation_Global/Header (0.0.3.26)
+  - BURelyFoundation_Global/NETWork (0.0.3.26):
+    - BURelyFoundation_Global/AFNetworking
+  - BURelyFoundation_Global/Pangle (0.0.3.26):
+    - BURelyFoundation_Global/AFNetworking
+    - BURelyFoundation_Global/Foundation
+    - BURelyFoundation_Global/Gecko
+    - BURelyFoundation_Global/Header
+    - BURelyFoundation_Global/NETWork
+    - BURelyFoundation_Global/SDWebImage
+    - BURelyFoundation_Global/YYModel
+    - BURelyFoundation_Global/ZFPlayer
+    - BURelyFoundation_Global/Zip
+  - BURelyFoundation_Global/SDWebImage (0.0.3.26):
+    - BURelyFoundation_Global/Foundation
+  - BURelyFoundation_Global/YYModel (0.0.3.26)
+  - BURelyFoundation_Global/ZFPlayer (0.0.3.26):
+    - BURelyFoundation_Global/Foundation
+    - BURelyFoundation_Global/Zip
+  - BURelyFoundation_Global/Zip (0.0.3.26):
+    - BURelyFoundation_Global/Foundation
+  - DivKit (13.0.0):
+    - DivKit_Base (= 13.0.0)
+    - DivKit_BaseTiny (= 13.0.0)
+    - DivKit_BaseUI (= 13.0.0)
+    - DivKit_CommonCore (= 13.0.0)
+    - DivKit_LayoutKit (= 13.0.0)
+    - DivKit_LayoutKitInterface (= 13.0.0)
+    - DivKit_Networking (= 13.0.0)
+    - DivKit_Serialization (= 13.0.0)
+    - DivKit_TemplatesSupport (= 13.0.0)
+  - DivKit_Base (13.0.0):
+    - DivKit_BaseTiny (= 13.0.0)
+    - DivKit_BaseUI (= 13.0.0)
+  - DivKit_BaseTiny (13.0.0)
+  - DivKit_BaseUI (13.0.0):
+    - DivKit_BaseTiny (= 13.0.0)
+  - DivKit_CommonCore (13.0.0):
+    - DivKit_Base (= 13.0.0)
+    - DivKit_BaseTiny (= 13.0.0)
+  - DivKit_LayoutKit (13.0.0):
+    - DivKit_BaseTiny (= 13.0.0)
+    - DivKit_BaseUI (= 13.0.0)
+    - DivKit_CommonCore (= 13.0.0)
+    - DivKit_LayoutKitInterface (= 13.0.0)
+  - DivKit_LayoutKitInterface (13.0.0):
+    - DivKit_Base (= 13.0.0)
+    - DivKit_BaseTiny (= 13.0.0)
+    - DivKit_BaseUI (= 13.0.0)
+  - DivKit_Networking (13.0.0):
+    - DivKit_Base (= 13.0.0)
+  - DivKit_Serialization (13.0.0):
+    - DivKit_CommonCore (= 13.0.0)
+  - DivKit_TemplatesSupport (13.0.0):
+    - DivKit_CommonCore (= 13.0.0)
+    - DivKit_Serialization (= 13.0.0)
+  - FBAudienceNetwork (6.12.0)
+  - Flutter (1.0.0)
+  - Fyber_Marketplace_SDK (8.1.9):
+    - Fyber_Marketplace_SDK/IASDKCore (= 8.1.9)
+  - Fyber_Marketplace_SDK/IASDKCore (8.1.9)
+  - GDTMobSDK (4.14.12):
+    - GDTMobSDK/GDTMobSDK (= 4.14.12)
+  - GDTMobSDK/GDTMobSDK (4.14.12)
+  - Google-Mobile-Ads-SDK (10.2.0):
+    - GoogleAppMeasurement (< 11.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (10.8.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.8.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.8.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.8.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.8.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleUserMessagingPlatform (2.0.1)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.1):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.1):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.11.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.11.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.11.1):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.1)"
+  - GoogleUtilities/Reachability (7.11.1):
+    - GoogleUtilities/Logger
+  - InMobiSDK/Core (10.1.3)
+  - IronSourceSDK (7.2.7.0)
+  - MintegralAdSDK (7.3.3):
+    - MintegralAdSDK/BannerAd (= 7.3.3)
+    - MintegralAdSDK/BidBannerAd (= 7.3.3)
+    - MintegralAdSDK/BidInterstitialVideoAd (= 7.3.3)
+    - MintegralAdSDK/BidNativeAd (= 7.3.3)
+    - MintegralAdSDK/BidNewInterstitialAd (= 7.3.3)
+    - MintegralAdSDK/BidRewardVideoAd (= 7.3.3)
+    - MintegralAdSDK/InterstitialVideoAd (= 7.3.3)
+    - MintegralAdSDK/NativeAd (= 7.3.3)
+    - MintegralAdSDK/NewInterstitialAd (= 7.3.3)
+    - MintegralAdSDK/RewardVideoAd (= 7.3.3)
+  - MintegralAdSDK/BannerAd (7.3.3):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/BidBannerAd (7.3.3):
+    - MintegralAdSDK/BannerAd
+    - MintegralAdSDK/BidNativeAd
+  - MintegralAdSDK/BidInterstitialVideoAd (7.3.3):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/InterstitialVideoAd
+  - MintegralAdSDK/BidNativeAd (7.3.3):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/BidNewInterstitialAd (7.3.3):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/NewInterstitialAd
+  - MintegralAdSDK/BidRewardVideoAd (7.3.3):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/RewardVideoAd
+  - MintegralAdSDK/BidSplashAd (7.3.3):
+    - MintegralAdSDK/BidNativeAd
+    - MintegralAdSDK/SplashAd
+  - MintegralAdSDK/InterstitialVideoAd (7.3.3):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/NativeAd (7.3.3)
+  - MintegralAdSDK/NewInterstitialAd (7.3.3):
+    - MintegralAdSDK/InterstitialVideoAd
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/RewardVideoAd (7.3.3):
+    - MintegralAdSDK/NativeAd
+  - MintegralAdSDK/SplashAd (7.3.3):
+    - MintegralAdSDK/NativeAd
+  - myTargetSDK (5.16.0):
+    - myTrackerSDK (~> 3.0.3)
+  - myTrackerSDK (3.0.8)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - OneKit-Pangle/BaseKit (1.3.11)
+  - OneKit-Pangle/Database (1.3.11):
+    - OneKit-Pangle/Service
+  - OneKit-Pangle/Reachability (1.3.11):
+    - OneKit-Pangle/Service
+  - OneKit-Pangle/Service (1.3.11)
+  - PromisesObjC (2.2.0)
+  - RangersAPM-Pangle/Above (3.0.2)
+  - RangersAPM-Pangle/Core (3.0.2):
+    - OneKit-Pangle/BaseKit (= 1.3.11)
+  - RangersAPM-Pangle/Crash (3.0.2):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/HMD
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/Global (3.0.2):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/HMD (3.0.2):
+    - OneKit-Pangle/Database (= 1.3.11)
+    - RangersAPM-Pangle/Core
+  - RangersAPM-Pangle/Public (3.0.2):
+    - RangersAPM-Pangle/Above
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/Zyone
+    - RARegisterKit-Pangle/Core (= 0.0.7)
+  - RangersAPM-Pangle/SessionTracker (3.0.2):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/HMD
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/Zyone (3.0.2)
+  - RARegisterKit-Pangle/Core (0.0.7):
+    - OneKit-Pangle/BaseKit (= 1.3.11)
+    - OneKit-Pangle/Reachability (= 1.3.11)
+  - UnityAds (4.6.0)
+  - VungleSDK-iOS (6.12.3)
+  - YandexMobileAds (5.5.0):
+    - DivKit (~> 13.0)
+    - YandexMobileAds/Static (= 5.5.0)
+  - YandexMobileAds/Static (5.5.0):
+    - DivKit (~> 13.0)
+    - YandexMobileMetrica (< 5.0.0, >= 4.0.0)
+  - YandexMobileMetrica (4.5.0):
+    - YandexMobileMetrica/Static (= 4.5.0)
+  - YandexMobileMetrica/Static (4.5.0):
+    - YandexMobileMetrica/Static/Core (= 4.5.0)
+    - YandexMobileMetrica/Static/Crashes (= 4.5.0)
+  - YandexMobileMetrica/Static/Core (4.5.0)
+  - YandexMobileMetrica/Static/Crashes (4.5.0):
+    - YandexMobileMetrica/Static/Core
+  - yodo1mas (0.0.2):
+    - Flutter
+    - Yodo1MasFull (= 4.8.9-beta.2)
+  - Yodo1MasCore (4.8.9-beta.2):
+    - AFNetworking
+    - YYModel
+  - Yodo1MasFull (4.8.9-beta.2):
+    - Yodo1MasCore (= 4.8.9-beta.2)
+    - Yodo1MasMediationAdMob (= 4.8.9-beta.2)
+    - Yodo1MasMediationApplovin (= 4.8.9-beta.2)
+    - Yodo1MasMediationFacebook (= 4.8.9-beta.2)
+    - Yodo1MasMediationFyber (= 4.8.9-beta.2)
+    - Yodo1MasMediationInMobi (= 4.8.9-beta.2)
+    - Yodo1MasMediationIronSource (= 4.8.9-beta.2)
+    - Yodo1MasMediationMintegral (= 4.8.9-beta.2)
+    - Yodo1MasMediationMyTarget (= 4.8.9-beta.2)
+    - Yodo1MasMediationPangle (= 4.8.9-beta.2)
+    - Yodo1MasMediationTencent (= 4.8.9-beta.2)
+    - Yodo1MasMediationUnityAds (= 4.8.9-beta.2)
+    - Yodo1MasMediationVungle (= 4.8.9-beta.2)
+    - Yodo1MasMediationYandex (= 4.8.9-beta.2)
+    - Yodo1MasMediationYodo1 (= 4.8.9-beta.2)
+  - Yodo1MasMediationAdMob (4.8.9-beta.2):
+    - Google-Mobile-Ads-SDK (= 10.2.0)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationApplovin (4.8.9-beta.2):
+    - AppLovinSDK (= 11.8.1)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationFacebook (4.8.9-beta.2):
+    - FBAudienceNetwork (= 6.12.0)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationFyber (4.8.9-beta.2):
+    - Fyber_Marketplace_SDK (= 8.1.9)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationInMobi (4.8.9-beta.2):
+    - InMobiSDK/Core (= 10.1.3)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationIronSource (4.8.9-beta.2):
+    - IronSourceSDK (= 7.2.7.0)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationMintegral (4.8.9-beta.2):
+    - MintegralAdSDK (= 7.3.3)
+    - MintegralAdSDK/BidSplashAd (= 7.3.3)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationMyTarget (4.8.9-beta.2):
+    - myTargetSDK (= 5.16.0)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationPangle (4.8.9-beta.2):
+    - Ads-CN/BUAdSDK_Compatible (= 4.9.0.7)
+    - Ads-Global/BUAdSDK_Compatible (= 4.9.1.0)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationTencent (4.8.9-beta.2):
+    - GDTMobSDK (= 4.14.12)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationUnityAds (4.8.9-beta.2):
+    - UnityAds (= 4.6.0)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationVungle (4.8.9-beta.2):
+    - VungleSDK-iOS (= 6.12.3)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationYandex (4.8.9-beta.2):
+    - YandexMobileAds (= 5.5.0)
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - Yodo1MasMediationYodo1 (4.8.9-beta.2):
+    - Yodo1MasCore (= 4.8.9-beta.2)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - yodo1mas (from `.symlinks/plugins/yodo1mas/ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs:
+    - Ads-CN
+    - Ads-Global
+    - AFNetworking
+    - AppLovinSDK
+    - BURelyFoundation
+    - BURelyFoundation_Global
+    - DivKit
+    - DivKit_Base
+    - DivKit_BaseTiny
+    - DivKit_BaseUI
+    - DivKit_CommonCore
+    - DivKit_LayoutKit
+    - DivKit_LayoutKitInterface
+    - DivKit_Networking
+    - DivKit_Serialization
+    - DivKit_TemplatesSupport
+    - FBAudienceNetwork
+    - Fyber_Marketplace_SDK
+    - GDTMobSDK
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUserMessagingPlatform
+    - InMobiSDK
+    - IronSourceSDK
+    - MintegralAdSDK
+    - myTargetSDK
+    - myTrackerSDK
+    - nanopb
+    - OneKit-Pangle
+    - PromisesObjC
+    - RangersAPM-Pangle
+    - RARegisterKit-Pangle
+    - UnityAds
+    - VungleSDK-iOS
+    - YandexMobileAds
+    - YandexMobileMetrica
+    - YYModel
+  https://github.com/Yodo1Games/MAS-Spec-Pre.git:
+    - Yodo1MasCore
+    - Yodo1MasFull
+    - Yodo1MasMediationAdMob
+    - Yodo1MasMediationApplovin
+    - Yodo1MasMediationFacebook
+    - Yodo1MasMediationFyber
+    - Yodo1MasMediationInMobi
+    - Yodo1MasMediationIronSource
+    - Yodo1MasMediationMintegral
+    - Yodo1MasMediationMyTarget
+    - Yodo1MasMediationPangle
+    - Yodo1MasMediationTencent
+    - Yodo1MasMediationUnityAds
+    - Yodo1MasMediationVungle
+    - Yodo1MasMediationYandex
+    - Yodo1MasMediationYodo1
+  trunk:
+    - BUAdSDK
+    - GoogleUtilities
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  yodo1mas:
+    :path: ".symlinks/plugins/yodo1mas/ios"
+
+SPEC CHECKSUMS:
+  Ads-CN: d77f39f7fd2d1b0c45fdba79a517cb7fa6af665d
+  Ads-Global: feb7f1a1b56b0d93e4f4973a09ea433b74c18650
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  AppLovinSDK: bdf6729bc0b5719caa1d472ef65b874f3f4a3195
+  BUAdSDK: 6ca2a94b083208150cda71b4a637aaadca6d1d45
+  BURelyFoundation: a8626e5ace16231f070854832f39aab2bdafaeeb
+  BURelyFoundation_Global: a9e35a1a481fa13b266358061e774f7c18525795
+  DivKit: cbc853a0e94022835e9307e604135aa25424e284
+  DivKit_Base: 538c8daf847099e700646beb2b447aee1a4818fe
+  DivKit_BaseTiny: 1fa9cd01974dc65430bf409fef57e9a9b4c0679f
+  DivKit_BaseUI: b0478ce03702bbda3aa76f4388c05249ef578878
+  DivKit_CommonCore: 4db51be9c1263c0f7b62e9fb864785f47ab57875
+  DivKit_LayoutKit: c7974256f128cb2bbd7d5d6711c95c63727c53b3
+  DivKit_LayoutKitInterface: 02b3436a7191ab1b517da54a5fe076f9f6977c31
+  DivKit_Networking: 400504b0212282bd047c6720f70abaf74f6e4dd8
+  DivKit_Serialization: 4a55e41a1f06ec211e696963403db53469a19337
+  DivKit_TemplatesSupport: 6cb0a79e7673caeb05686403bd2b9a34c3624571
+  FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  Fyber_Marketplace_SDK: 8004b76b5515dafbd0e185d01c4644d522869725
+  GDTMobSDK: 085bb4c2390d78330405d90acfc43fa7f8d0a44e
+  Google-Mobile-Ads-SDK: 4cf7100c99e7cfdd97dd9193cc26a13411aa6891
+  GoogleAppMeasurement: 0ba93018e916f7badf915c2337d43cc1fa96b3f9
+  GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
+  GoogleUtilities: 9aa0ad5a7bc171f8bae016300bfcfa3fb8425749
+  InMobiSDK: 15589dbfbe6b28b1d3436ab1ede8654a0d7f2298
+  IronSourceSDK: 03ab6e62ac10589e5bea97cf0a379989f6965f36
+  MintegralAdSDK: 605656a8d39bfbc9efd0fc9d34c31ec705ed784c
+  myTargetSDK: f7f09df5c9934bf19b18fa1bdbc8d990f655df70
+  myTrackerSDK: df675bf18db63d9a426bd00d6c3dec4ba4bea57e
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  OneKit-Pangle: 19fc175cb04d0830594808f470751d3d2ab14318
+  PromisesObjC: 09985d6d70fbe7878040aa746d78236e6946d2ef
+  RangersAPM-Pangle: d2cc7e3887f0febfd82a1c91de96ec831fb584d1
+  RARegisterKit-Pangle: b840cfa2b841389f88959504aaf62ce2730a18d1
+  UnityAds: c6dbc1e4a4684e75f1c4272a3db5833666abdbea
+  VungleSDK-iOS: 27725029a42dfb9e39c67956637233fde1ee1797
+  YandexMobileAds: 1affe9f27183a569960e108a4b4cb6cbcfc8eaea
+  YandexMobileMetrica: 7dafc7d224077d4443ab3a587b82b24e9b6cc9c7
+  yodo1mas: a7699d516c050736bd35820ec59486796a3de576
+  Yodo1MasCore: c70337fcf70098cadb71aad1f884d85c9316e231
+  Yodo1MasFull: 0165280042b117ce6622d01fdde7769f504837ee
+  Yodo1MasMediationAdMob: 9b85a275a7b56a284956215f602a67c2c4b38335
+  Yodo1MasMediationApplovin: ea5e08d21aeeb61a10b10930a813330579b7656a
+  Yodo1MasMediationFacebook: 5d8a59d52378ca73724113f48375162b3ddab571
+  Yodo1MasMediationFyber: 14e063446a91bbcb2d2a797248f67e8e3de4d948
+  Yodo1MasMediationInMobi: 0c3f1c08ba51308890652c9e01ade9d086871af1
+  Yodo1MasMediationIronSource: 59d1945b6d7787ac93d5d0ee6d611670f726aeda
+  Yodo1MasMediationMintegral: a949bdf932783324486baccd7c5b534652c71586
+  Yodo1MasMediationMyTarget: d619df8880553981226a31795f2b5c16c44744a5
+  Yodo1MasMediationPangle: 9aea9ea16e50b1803c4421989d3ea0b40697359d
+  Yodo1MasMediationTencent: dcfb108f95754837e55697524d8fbaca88bace7d
+  Yodo1MasMediationUnityAds: d7122a50b8c223209c43230a04b66b128e2f41b0
+  Yodo1MasMediationVungle: 2953c889210807a940f8d02bb172313aa8b870a6
+  Yodo1MasMediationYandex: 066ce1266bfde9a904fa6877643a93e450e39b2b
+  Yodo1MasMediationYodo1: 87205a65357ecf32e94b3b81ce696eb6d73af8a1
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 008c5f522d89ea09b5c942de01e3b5f99171f462
+
+COCOAPODS: 1.11.3

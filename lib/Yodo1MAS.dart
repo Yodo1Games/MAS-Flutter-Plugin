@@ -1,3 +1,8 @@
+import 'dart:io';
+import 'dart:developer';
+import 'dart:isolate';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 
@@ -9,6 +14,9 @@ class Yodo1MAS {
   static const _METHOD_FLUTTER_INIT_EVENT = "flutter_init_event";
   static const _METHOD_FLUTTER_AD_EVENT = "flutter_ad_event";
   static const _METHOD_DISMISS_BANNER = "dismiss_banner";
+  static const _METHOD_DISMISS_BANNER2 = "dismiss_banner2";
+  static const _METHOD_DISMISS_NATIVE = "dismiss_native";
+  static const _REPORT_AD = "reportad";
 
 
   static const AD_TYPE_REWARD = 1;
@@ -30,12 +38,15 @@ class Yodo1MAS {
   Function(int event, String message)? _interstitialCallback;
   Function(int event, String message)? _bannerCallback;
 
-  void init(String appKey, Function(bool successful)? callback) {
+  void init(String appKey,bool enablePrivacyDialog, Function(bool successful)? callback) {
     _initCallback = callback;
 
     _channel.setMethodCallHandler((call) {
+
       switch(call.method) {
+
         case _METHOD_FLUTTER_INIT_EVENT: {
+
           bool successful = call.arguments["successful"];
           if (_initCallback != null) {
             _initCallback!(successful);
@@ -43,12 +54,31 @@ class Yodo1MAS {
           return Future<bool>.value(true);
         }
         case _METHOD_FLUTTER_AD_EVENT: {
-          Map<String, dynamic> map = json.decode(call.arguments);
-          int type = map["type"];
-          int code = map["code"];
-          String message = map["message"];
+          int type,code;
+          String message;
+          if (defaultTargetPlatform == TargetPlatform.android)
+          {
+            Map<String, dynamic> map = json.decode(call.arguments);
+             type = map["type"];
+             code = map["code"];
+             message = map["message"];
+          }
+          else
+            {
+               type = call.arguments["type"];
+               code = call.arguments["code"];
+               message = call.arguments["message"];
+            }
+
+
+
+
+          log("\n $type" +  " yodo1 ===================@@");
+          debugPrint("\n $type" + " yodo1 ===================@@");
+          print("\n $type" +  " yodo1 ===================@@");
           switch (type) {
             case AD_TYPE_REWARD:
+
               if (_rewardCallback != null) {
                 _rewardCallback!(code, message);
               }
@@ -70,7 +100,7 @@ class Yodo1MAS {
       }
       return Future<bool>.value(true);
     });
-    _channel.invokeMethod(_METHOD_NATIVE_INIT_SDK, {"app_key": appKey});
+    _channel.invokeMethod(_METHOD_NATIVE_INIT_SDK, {"app_key": appKey,"privacy" : enablePrivacyDialog});
   }
 
   void setRewardListener(Function(int event, String message)? callback) {
@@ -111,5 +141,15 @@ class Yodo1MAS {
 
   void dismissBannerAd() {
     _channel.invokeMethod(_METHOD_DISMISS_BANNER);
+  }
+  void dismissBannerAd2() {
+    _channel.invokeMethod(_METHOD_DISMISS_BANNER2);
+  }
+  void dismissNativeAd() {
+    _channel.invokeMethod(_METHOD_DISMISS_NATIVE);
+  }
+
+  void showReportAdDialog() {
+    _channel.invokeMethod(_REPORT_AD);
   }
 }

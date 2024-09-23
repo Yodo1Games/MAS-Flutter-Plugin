@@ -1,5 +1,5 @@
-package com.yodo1.testmasfluttersdktwo
-
+//package com.yodo1.testmasfluttersdktwo
+/*
 import androidx.annotation.NonNull
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -33,3 +33,4 @@ class TestmasfluttersdktwoPlugin: FlutterPlugin, MethodCallHandler {
     channel.setMethodCallHandler(null)
   }
 }
+*/
