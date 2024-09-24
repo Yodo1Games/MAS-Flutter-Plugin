@@ -231,7 +231,7 @@ public class TestmasfluttersdktwoPlugin implements FlutterPlugin, MethodCallHand
 
     }
 
-    void initializeAdsCallback(){
+    void initializeAdsCallback() {
 
 
         Yodo1Mas.getInstance().setRewardListener(new Yodo1Mas.RewardListener() {

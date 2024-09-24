@@ -10,6 +10,7 @@ class Yodo1MAS {
   static const _CHANNEL = "com.yodo1.mas/sdk";
   static const _METHOD_NATIVE_INIT_SDK = "native_init_sdk";
   static const _METHOD_NATIVE_IS_AD_LOADED = "native_is_ad_loaded";
+  static const _METHOD_NATIVE_LOAD_AD = "native_load_ad";
   static const _METHOD_NATIVE_SHOW_AD = "native_show_ad";
   static const _METHOD_FLUTTER_INIT_EVENT = "flutter_init_event";
   static const _METHOD_FLUTTER_AD_EVENT = "flutter_ad_event";
@@ -22,6 +23,7 @@ class Yodo1MAS {
   static const AD_TYPE_REWARD = 1;
   static const AD_TYPE_INTERSTITIAL = 2;
   static const AD_TYPE_BANNER = 3;
+  static const AD_TYPE_APP_OPEN = 4;
 
   static const AD_EVENT_OPENED = 1001;
   static const AD_EVENT_CLOSED = 1002;
@@ -38,7 +40,7 @@ class Yodo1MAS {
   Function(int event, String message)? _interstitialCallback;
   Function(int event, String message)? _bannerCallback;
 
-  void init(String appKey,bool enablePrivacyDialog, Function(bool successful)? callback) {
+  void initSdk(String appKey, bool privacy, bool ccpa, bool coppa, bool gdpr, Function(bool successful)? callback) {
     _initCallback = callback;
 
     _channel.setMethodCallHandler((call) {
@@ -100,7 +102,7 @@ class Yodo1MAS {
       }
       return Future<bool>.value(true);
     });
-    _channel.invokeMethod(_METHOD_NATIVE_INIT_SDK, {"app_key": appKey,"privacy" : enablePrivacyDialog});
+    _channel.invokeMethod(_METHOD_NATIVE_INIT_SDK, {"app_key": appKey, "privacy" : privacy, "ccpa": ccpa, "gdpr": gdpr, "coppa": coppa});
   }
 
   void setRewardListener(Function(int event, String message)? callback) {
@@ -115,6 +117,17 @@ class Yodo1MAS {
     _bannerCallback = callback;
   }
 
+  void loadInterstitialAd() {
+    _channel.invokeMethod(_METHOD_NATIVE_LOAD_AD, {"ad_type": "Interstitial"});
+  }
+
+  void loadRewardAd() {
+    _channel.invokeMethod(_METHOD_NATIVE_LOAD_AD, {"ad_type": "Reward"});
+  }
+
+  void loadAppOpenAd() {
+    _channel.invokeMethod(_METHOD_NATIVE_LOAD_AD, {"ad_type": "AppOpen"});
+  }
   Future<bool?> isRewardAdLoaded() {
     return _channel.invokeMethod<bool>(_METHOD_NATIVE_IS_AD_LOADED, {"ad_type" : "Reward"});
   }

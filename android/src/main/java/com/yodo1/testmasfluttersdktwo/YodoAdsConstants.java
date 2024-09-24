@@ -3,17 +3,17 @@ package com.yodo1.testmasfluttersdktwo;
 public interface YodoAdsConstants {
     String MAIN_CHANNEL = "com.yodo1.mas/sdk";
 
-    public static final String METHOD_NATIVE_INIT_SDK = "native_init_sdk";
-    public static final String METHOD_NATIVE_IS_AD_LOADED = "native_is_ad_loaded";
-    public  static final String METHOD_NATIVE_SHOW_AD = "native_show_ad";
+    String METHOD_NATIVE_INIT_SDK = "native_init_sdk";
+    String METHOD_NATIVE_IS_AD_LOADED = "native_is_ad_loaded";
+    String METHOD_NATIVE_SHOW_AD = "native_show_ad";
+    String METHOD_NATIVE_LOAD_AD = "native_load_ad";
 
-    public static final String METHOD_FLUTTER_INIT_EVENT = "flutter_init_event";
-    public static final String METHOD_FLUTTER_AD_EVENT = "flutter_ad_event";
-    public static final String DISMISS_BANNER = "dismiss_banner";
-    public static final String DISMISS_BANNER2 = "dismiss_banner2";
-    public static final String DISMISS_NATIVE2 = "dismiss_native";
-    //public static final String REPORT_AD = "reportad";
-
+    String METHOD_FLUTTER_INIT_EVENT = "flutter_init_event";
+    String METHOD_FLUTTER_AD_EVENT = "flutter_ad_event";
+    String DISMISS_BANNER = "dismiss_banner";
+    String DISMISS_BANNER2 = "dismiss_banner2";
+    String DISMISS_NATIVE2 = "dismiss_native";
+    //String REPORT_AD = "reportad";
 
     String HEIGHT_PARAMETER = "height";
     String WIDTH_PARAMETER = "width";
@@ -39,6 +39,4 @@ public interface YodoAdsConstants {
     String NATIVE_LOADED_METHOD = "native_loaded";
     String NATIVE_OPEN_METHOD = "native_open";
     String NATIVE_CLOSE_METHOD = "native_close";
-
-
 }

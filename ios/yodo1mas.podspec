@@ -15,8 +15,8 @@ A new Flutter project.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.platform = :ios, '12.0'
-  s.dependency 'Yodo1MasFull', '4.10.0'
+  s.platform = :ios, '13.0'
+  s.dependency 'Yodo1MasFull', '4.13.2'
   s.static_framework = true
 
   # Flutter.framework does not contain a i386 slice.
