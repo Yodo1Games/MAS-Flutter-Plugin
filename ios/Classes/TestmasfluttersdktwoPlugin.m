@@ -67,6 +67,7 @@ FlutterMethodChannel *channel;
             }
         } else if ([call.method isEqualToString:METHOD_NATIVE_LOAD_AD]) {
             NSString *type = call.arguments[@"ad_type"];
+            NSLog(@"Load Ad - %@", call.arguments);
             if (type) {
                 if ([type isEqualToString:@"Reward"]) {
                     [[Yodo1MasRewardAd sharedInstance] loadAd];
@@ -80,6 +81,7 @@ FlutterMethodChannel *channel;
             }
         } else if ([call.method isEqualToString:METHOD_NATIVE_IS_AD_LOADED]) {
             BOOL isAdLoaded = NO;
+            NSLog(@"Is Loaded Ad - %@", call.arguments);
             NSString *type = call.arguments[@"ad_type"];
             if (type) {
                 if ([type isEqualToString:@"Reward"]) {
@@ -92,6 +94,7 @@ FlutterMethodChannel *channel;
                     isAdLoaded = [[Yodo1MasAppOpenAd sharedInstance] isLoaded];
                 }
             }
+
             result(@(isAdLoaded));
         } else if ([call.method isEqualToString:METHOD_DISMISS_BANNER]) {
             // [[Yodo1Mas sharedInstance] dismissBannerAd];

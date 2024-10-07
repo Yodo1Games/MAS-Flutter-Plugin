@@ -27,15 +27,16 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    Yodo1MAS.instance.initSdk("o3WH2LIAfj", false, true, false, false, (successful) {
+    Yodo1MAS.instance.initSdk("JR835c6fza", false, true, false, false, (successful) {
     if (successful) {
       print('SDK initialization successful');
       Yodo1MAS.instance.loadInterstitialAd();
+
     } else {
       print('SDK initialization failed');
     }
     });
-    Yodo1MAS.instance.showReportAdDialog();
+    // Yodo1MAS.instance.showReportAdDialog();
 
 
     //givereward();
@@ -90,11 +91,12 @@ class _MyAppState extends State<MyApp> {
 
   }
 
-    void _showRewardedAd() async {
+    void _showInterstitialAd() async {
       print('Showing rewarded ad');
       if(await Yodo1MAS.instance.isInterstitialAdLoaded() as bool) {
         print('Ad is loaded trigger show');
         Yodo1MAS.instance.showInterstitialAd();
+        Yodo1MAS.instance.loadInterstitialAd();
       }
     // Optionally, show a message or handle the result
   }
@@ -104,13 +106,26 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Unity Ads Example'),
+          title: const Text('Flutter Plugin Example'),
         ),
         body: SafeArea(
           child: Center(
-            child: ElevatedButton(
-              onPressed: _showRewardedAd,
-              child: const Text('Click Me'),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: _showInterstitialAd,
+                  child: const Text('Click Me'),
+                ),
+                const SizedBox(height: 20), // Add some space between buttons
+                ElevatedButton(
+                  onPressed: () {
+                    // Add functionality for the new button here
+                    print('New button clicked');
+                  },
+                  child: const Text('New Button'),
+                ),
+              ],
             ),
           ),
         ),

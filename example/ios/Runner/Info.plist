@@ -11,7 +11,7 @@
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-5580537606944457~2530381569</string>
+	<string>ca-app-pub-5580537606944457~8065947180</string>
 	<key>GADIsAdManagerApp</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -547,6 +547,8 @@
 		</dict>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 </dict>
 </plist>
